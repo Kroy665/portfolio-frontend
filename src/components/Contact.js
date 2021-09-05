@@ -80,7 +80,7 @@ function Contact(props) {
         if(validName==='' && validEmail==='' && validMessage===''){
             console.log(data)
             try {
-                await axios.post(`${process.env.REACT_APP_APIS}/api/hireme`,data)
+                await axios.post(`${process.env.REACT_APP_APIS}api/hireme`,data)
                 .then((res)=>{
                     // console.log(res)
                     try {
