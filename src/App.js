@@ -1,5 +1,5 @@
 import './App.css';
-import React,{useRef} from 'react'
+import React,{useRef,useEffect} from 'react'
 import { Navbar, Nav, Container, Card, Button} from 'react-bootstrap';
 
 // import About from './components/About'
@@ -7,7 +7,13 @@ import Projects from './components/Projects'
 import Skills from './components/Skills'
 import Contact from './components/Contact'
 import Testimonials from './components/Testimonials'
+import ReactGA from 'react-ga'
 function App() {
+  useEffect(() => {
+    ReactGA.initialize('G-2Q37BNRVRD')
+    ReactGA.pageview('/')
+  }, [])
+
   const projectsPosition = useRef(null)
   const skillsPosition = useRef(null)
   const contactPosition = useRef(null)
