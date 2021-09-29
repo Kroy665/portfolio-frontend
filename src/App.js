@@ -8,11 +8,11 @@ import Skills from './components/Skills'
 import Contact from './components/Contact'
 import Testimonials from './components/Testimonials'
 import ReactGA from 'react-ga'
+ReactGA.initialize(process.env.REACT_APP_GOOGLE_ANALYT)
 function App() {
   useEffect(() => {
-    ReactGA.initialize('G-2Q37BNRVRD')
-    ReactGA.pageview('/')
-  }, [])
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  })
 
   const projectsPosition = useRef(null)
   const skillsPosition = useRef(null)
