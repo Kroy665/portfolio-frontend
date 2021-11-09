@@ -8,10 +8,12 @@ import Skills from './components/Skills'
 import Contact from './components/Contact'
 import Testimonials from './components/Testimonials'
 import ReactGA from 'react-ga'
+// import {withRouter,Router} from 'react-router-dom'
 ReactGA.initialize(process.env.REACT_APP_GOOGLE_ANALYT)
 function App() {
   useEffect(() => {
     ReactGA.pageview(window.location.pathname + window.location.search);
+    // console.log(window.location.pathname + window.location.search)
   })
 
   const projectsPosition = useRef(null)
@@ -37,6 +39,7 @@ function App() {
   }
   return (
     <div className="App" style={{backgroundColor: 'black'}}>
+      {/* <Router> */}
       {/* MainNavbar */}
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
         <Container>
@@ -86,6 +89,7 @@ function App() {
       <Skills refProp={skillsPosition}/>
       <Contact refProp={{contactPosition,hiremePosition}}/>
       <Testimonials refProp={testimonialsPosition}/>
+      {/* </Router> */}
     </div>
   );
 }

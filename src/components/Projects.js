@@ -33,23 +33,34 @@ function Projects(props) {
             <Row>
                 <Col style={{display: 'flex', justifyContent: 'center'}}>
                     <ProjectCard 
-                        CardImg={`${process.env.PUBLIC_URL}/images/CardImg1.jpeg`}
-                        CardTitle='Calculatar'
-                        CardText="This Is A CAlcularar"
-                        SiteUrl="https://kroy-basic-calculator.herokuapp.com"
-                        GitUrl="https://github.com/Kroy665/basic-calculator.git"
+                        CardImg={`${process.env.PUBLIC_URL}/images/CardImg2.png`}
+                        CardTitle='Auth Route Test FrontEnd'
+                        CardText="This is a Register and Login test app created by React. ,"
+                        SiteUrl="https://auth-route-test.herokuapp.com"
+                        GitUrl="https://github.com/Kroy665/auth-route-test"
                     />
                 </Col>
                 
                 <Col style={{display: 'flex', justifyContent: 'center'}}>
                     <ProjectCard 
-                        CardImg={`${process.env.PUBLIC_URL}/images/CardImg1.jpeg`}
-                        CardTitle='Calculatar'
-                        CardText="This Is A CAlcularar" 
-                        SiteUrl="https://kroy-basic-calculator.herokuapp.com"
-                        GitUrl="https://github.com/Kroy665/basic-calculator.git"
+                        CardImg={`${process.env.PUBLIC_URL}/images/CardImg3.png`}
+                        CardTitle='Auth Route Test Backend'
+                        CardText="This is created with NodeJs, Express, MongoDB, Redis, bcrypt. " 
+                        SiteUrl="https://auth-routh-test-backend.herokuapp.com"
+                        GitUrl="https://github.com/Kroy665/auth-route-test-backend"
                     />
                 </Col>
+
+                <Col style={{display: 'flex', justifyContent: 'center'}}>
+                    <ProjectCard 
+                        CardImg={`${process.env.PUBLIC_URL}/images/CardImg4.png`}
+                        CardTitle='Project Portfolio'
+                        CardText="This is the project for my Portfolio."
+                        SiteUrl="https://kroy-portfolio-frontend.herokuapp.com"
+                        GitUrl="https://github.com/Kroy665/portfolio-frontend"
+                    />
+                </Col>
+
                 <Col style={{display: 'flex', justifyContent: 'center'}}>
                     <ProjectCard 
                         CardImg={`${process.env.PUBLIC_URL}/images/CardImg1.jpeg`}
