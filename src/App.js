@@ -43,7 +43,16 @@ function App() {
       {/* MainNavbar */}
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
         <Container>
-        <Navbar.Brand href="#home">Koushik</Navbar.Brand>
+        <Navbar.Brand >
+        <img
+          alt=""
+          src={`${process.env.PUBLIC_URL}/kroylogo.png`}
+          width="30"
+          height="30"
+          className="d-inline-block align-top"
+        />{' '}
+          <b style={{fontFamily:'auto', fontStyle:'italic'}}>Koushik Roy</b>
+          </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
             <Nav>
