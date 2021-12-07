@@ -1,42 +1,35 @@
-import React from 'react'
-import { Container,Row, Col } from 'react-bootstrap';
+import React from "react";
+import { Container, Card } from "react-bootstrap";
 
 function Testimonials(props) {
     return (
-        <Container >
-            <div 
+        <Container style={{ marginTop: '100px', marginBottom: '10px'}}>
+            <div
                 style={{
-                    display: 'flex', 
-                    justifyContent: 'center', 
-                    fontSize: '30px', 
-                    color: 'white', 
-                    marginBottom: '30px'
+                    display: "flex",
+                    justifyContent: "center",
+                    fontSize: "30px",
+                    color: "white",
+                    marginBottom: "30px",
                 }}
                 ref={props.refProp}
             >
-                {'<My Testimonial/>'}
+                {"<Testimonials/>"}
             </div>
-            <Row style={{display: 'flex', justifyContent: 'center'}}>
-                <Col style={{border: '3px solid #111', minWidth: '300px'}}>
-                    <p style={{fontSize: '20px', color: 'white', textAlign: 'justify'}}>
-                    I am Koushik Roy. I have done B.Sc And M.Sc in Applied Mathematics from 
-                    University of Burdwan. At University I learn C/C++ and MATLAB, and the other languages
-                    are salf taught. I have done many sample projects for my experiments. 
-                    </p>
-                </Col>
-                <Col style={{border: '3px solid #111', minWidth: '300px'}}>
-                    <p style={{fontSize: '20px', color: 'white', textAlign: 'justify'}}>
-                    To take any sort of challenging job commensurate with any
-                    ability and knowledge to perform it successfully would more than
-                    eager to shoulder responsibilities, which would broaden my
-                    knowledge and scope for future development. I am able to work on
-                    own initiative or as a part of a team and can deal with my duties
-                    competently.
-                    </p>
-                </Col>
-            </Row>
+            <div style={{ display: "flex", justifyContent: "center" }}>
+                <Card style={{ width: "20rem", padding: "1rem"}}>
+                    <Card.Img
+                        alt=" Anatoly R. Feedback From Freelancer.com"
+                        variant="top"
+                        src="https://res.cloudinary.com/kroy963/image/upload/v1638883596/PortFolio/WhatsApp_Image_2021-12-07_at_6.51.22_PM_yu2kab.jpg"
+                    />
+                    <Card.Title>
+                        Anatoly R. Feedback From Freelancer.com
+                    </Card.Title>
+                </Card>
+            </div>
         </Container>
-    )
+    );
 }
 
-export default Testimonials
+export default Testimonials;

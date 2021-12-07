@@ -6,8 +6,10 @@ import { Navbar, Nav, Container, Card, Button} from 'react-bootstrap';
 import Projects from './components/Projects'
 import Skills from './components/Skills'
 import Contact from './components/Contact'
+import MyWords from './components/MyWords'
 import Testimonials from './components/Testimonials'
 import ReactGA from 'react-ga'
+
 // import {withRouter,Router} from 'react-router-dom'
 ReactGA.initialize(process.env.REACT_APP_GOOGLE_ANALYT)
 function App() {
@@ -19,8 +21,9 @@ function App() {
   const projectsPosition = useRef(null)
   const skillsPosition = useRef(null)
   const contactPosition = useRef(null)
-  const testimonialsPosition = useRef(null)
+  const MyWordsPosition = useRef(null)
   const hiremePosition = useRef(null)
+  const testimonialsPosition = useRef(null)
 
   const projectsClick=()=>{
     projectsPosition.current.scrollIntoView({behavior: "smooth", inline: "nearest"})
@@ -33,6 +36,9 @@ function App() {
   }
   const testimonialsClick=() => {
     testimonialsPosition.current.scrollIntoView({behavior: "smooth", inline: "nearest"}) 
+  }
+  const MyWordsClick=() => {
+    MyWordsPosition.current.scrollIntoView({behavior: "smooth", inline: "nearest"}) 
   }
   const hiremeClick=() => {
     hiremePosition.current.scrollIntoView({behavior: "smooth", inline: "nearest"})
@@ -58,8 +64,9 @@ function App() {
             <Nav>
                 <Nav.Link onClick={projectsClick}>Projects</Nav.Link>
                 <Nav.Link onClick={skillsClick}>Skills</Nav.Link>
-                <Nav.Link onClick={contactClick}>Contact</Nav.Link> 
-                <Nav.Link onClick={testimonialsClick}>Testimonials</Nav.Link>      
+                <Nav.Link onClick={testimonialsClick}>Testimonials</Nav.Link>
+                <Nav.Link onClick={contactClick}>Contact</Nav.Link>  
+                <Nav.Link onClick={MyWordsClick}>MyWords</Nav.Link>      
             </Nav>
         </Navbar.Collapse>
         </Container>
@@ -96,8 +103,9 @@ function App() {
       {/* About */}
       <Projects refProp={projectsPosition}/>
       <Skills refProp={skillsPosition}/>
-      <Contact refProp={{contactPosition,hiremePosition}}/>
       <Testimonials refProp={testimonialsPosition}/>
+      <Contact refProp={{contactPosition,hiremePosition}}/>
+      <MyWords refProp={MyWordsPosition}/>
       {/* </Router> */}
     </div>
   );

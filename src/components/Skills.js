@@ -50,6 +50,13 @@ function Skills(props) {
             </Row>
             <Row>
                 
+                <SkillCard skillName="Redux" skillCardImg={`${process.env.PUBLIC_URL}/images/reduxLogo.svg`}/>
+              
+                <SkillCard skillName='Mongoose' skillCardImg={`${process.env.PUBLIC_URL}/images/mongooseLogo.png`}/>
+                
+            </Row>
+            <Row>
+                
                 <SkillCard skillName="Rest API" skillCardImg={`${process.env.PUBLIC_URL}/images/restapiLogo.png`}/>
             
                 <SkillCard skillName='Socket.io' skillCardImg={`${process.env.PUBLIC_URL}/images/socketioLogo.jpg`}/>

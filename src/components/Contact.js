@@ -12,6 +12,8 @@ import { CheckLg } from 'react-bootstrap-icons';
 import Spinner from 'react-bootstrap/Spinner'
 import ReCAPTCHA from 'react-google-recaptcha'
 
+import cvKroy from './CV_Koushik_Roy_new.pdf'
+
 
 function Contact(props) {
     const [errors,setErrors]=useState('no errors');
@@ -178,6 +180,7 @@ function Contact(props) {
             )
         }
     }
+
     
 
     return (
@@ -202,6 +205,7 @@ function Contact(props) {
                             West Bengal-735210,
                             India
                             </Card.Text>
+                            <Button variant="outline-success" href={cvKroy} download="Koushik_Roy_Resume.pdf">Download Resume</Button>
 
                         </Card.Body>
                         <ListGroup className="list-group-flush">

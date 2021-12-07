@@ -16,7 +16,7 @@ function About() {
           Are You Looking For A Web Developer?
         </Card.Title>
         <Card.Text style={{display: 'flex', justifyContent: 'center', fontSize: "22px"}}>
-          Hi, I'am Koushik Roy a Web Developer & Programmer. I makes Web Apps usually with MERN
+          Hi, I'am Koushik Roy a Web Developer & Programmer. I make Web Apps usually with MERN
         </Card.Text>
         <div style={{display: 'flex', justifyContent: "space-around", marginTop: '180px'}}>
           <Button variant="info" size="lg" active style={{minWidth:"180px"}}>
